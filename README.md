@@ -1,4 +1,4 @@
-# controller-sound-studio
+# Sound Controller Studio
 
 ## Developement Instructions
 1. In the root directory, run `npm install` to install all the project dependencies
