@@ -1,0 +1,11 @@
+const Tram = require('tram-one')
+const { loadKeyboardEvents, loadGamepadEvents } = require('./js/utils')
+const html = Tram.html()
+
+const app = new Tram()
+app.addRoute('/', require('./pages/home'))
+app.addRoute('/404', require('./pages/404'))
+app.addActions(require('./reducer/soundActions'))
+app.start('.main')
+loadKeyboardEvents(app)
+loadGamepadEvents(app)
